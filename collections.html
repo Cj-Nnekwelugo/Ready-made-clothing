@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="h-18 w-full  sticky bg-[#e8ecf0] shadow-xl top-0 z-50 ">
+          <nav class="h-full p-3 ">
+               <div class="container mx-auto flex items-center justify-between">
+                    <div class="  gap-8">
+                          <span class="text-3xl text-gray-800">
+                         <i class="fa-solid fa-vest-patches"></i>
+                    </span>
+                         <span class="text-2xl font-bold text-gray-800 gap-8">Readymadeclothing</span>
+                   
+                    </div>
+                    <ul class=" space-x-4 gap-6 hidden lg:flex">
+                         <li><a href="./index.html" class="text-black-300 hover:text-gray-500">Home</a></li>
+                         <li><a href="./shop.html" class="text-black-300 hover:text-gray-500">Shop</a></li>
+                         <li><a href="./about.html" class="text-black-300 hover:text-gray-500">About</a></li>
+                         <li><a href="./collections.html" class="text-black-300 hover:text-gray-500">Collections</a></li>
+                         <li><a href="./contact.html" class="text-black-300 hover:text-gray-500">Contact</a></li>
+                    </ul>
+                    <div class="space-x-4 hidden lg:flex">
+                         <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Login</button>
+                    <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Sign Up</button>
+                    </div>
+                    <!-- Mobile -->
+                    <div class="lg:hidden">
+                         <button>
+                              <i class="fa-solid fa-bars"></i>
+                         </button>
+                    
+                    <ul class="absolute top-full left-0 bg-white w-full p-6 hidden">
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Home</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Shop</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">About</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Collections</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Contact</a></li>
+                    </ul>
+                    </div>
+               </div>
+               
+          </nav>
+     </header>
+
+    
+
+          <section class="container mx-auto px-4 py-16">
+               <div class="mb-10 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">Featured collections</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600">Shop by look and find the collection that fits your mood, from polished officewear to laid-back weekend outfits.</p>
+               </div>
+
+               <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                    <article class="rounded overflow-hidden bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+                         <img src="images/2150639882.jpg" alt="Spring Edit collection" class="h-72 w-full object-cover" />
+                         <div class="p-8">
+                              <span class="inline-flex rounded-full bg-gray-100 px-3 py-1 text-xs uppercase tracking-[0.3em] text-gray-500 mb-4">Spring edit</span>
+                              <h3 class="text-2xl font-semibold mb-3">Spring Edit</h3>
+                              <p class="text-gray-600 mb-6">Light layers, soft neutrals, and easy silhouettes made for sunny days and weekend adventures.</p>
+                              <a href="shop.html" class="inline-flex items-center rounded-full bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-gray-700">Shop the collection</a>
+                         </div>
+                    </article>
+                    <article class="rounded overflow-hidden bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+                         <img src="images/2148924079.jpg" alt="Workwear collection" class="h-72 w-full object-cover" />
+                         <div class="p-8">
+                              <span class="inline-flex rounded-full bg-gray-100 px-3 py-1 text-xs uppercase tracking-[0.3em] text-gray-500 mb-4">Workwear</span>
+                              <h3 class="text-2xl font-semibold mb-3">Workwear</h3>
+                              <p class="text-gray-600 mb-6">Polished essentials and modern tailoring for days when you want to feel confident and put together.</p>
+                              <a href="shop.html" class="inline-flex items-center rounded-full bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-gray-700">View workwear</a>
+                         </div>
+                    </article>
+                    <article class="rounded overflow-hidden bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+                         <img src="images/2150746345.jpg" alt="Weekend collection" class="h-72 w-full object-cover" />
+                         <div class="p-8">
+                              <span class="inline-flex rounded-full bg-gray-100 px-3 py-1 text-xs uppercase tracking-[0.3em] text-gray-500 mb-4">Weekend</span>
+                              <h3 class="text-2xl font-semibold mb-3">Weekend Edit</h3>
+                              <p class="text-gray-600 mb-6">Comfortable layering pieces and standout staples for brunch plans, travel, and relaxed days off.</p>
+                              <a href="shop.html" class="inline-flex items-center rounded-full bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-gray-700">Shop weekend</a>
+                         </div>
+                    </article>
+
+                                        <article class="rounded overflow-hidden bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-2xl">
+                         <img src="images/2150952386.jpg" alt="Weekend collection" class="h-72 w-full object-cover" />
+                         <div class="p-8">
+                              <span class="inline-flex rounded-full bg-gray-100 px-3 py-1 text-xs uppercase tracking-[0.3em] text-gray-500 mb-4">women section</span>
+                              <h3 class="text-2xl font-semibold mb-3">Weekend Edit 2</h3>
+                              <p class="text-gray-600 mb-6"> its also Comfortable layering pieces and standout staples for brunch plans, travel, and relaxed days off.</p>
+                              <a href="shop.html" class="inline-flex items-center rounded-full bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-gray-700">Shop weekend</a>
+                         </div>
+                    </article>
+               </div>
+          </section>
+     </main>
+</body>
+</html>

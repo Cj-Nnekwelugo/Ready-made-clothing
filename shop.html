@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="h-18 w-full  sticky bg-[#e8ecf0] shadow-xl top-0 z-50 ">
+          <nav class="h-full p-3 ">
+               <div class="container mx-auto flex items-center justify-between">
+                    <div class="  gap-8">
+                          <span class="text-3xl text-gray-800">
+                         <i class="fa-solid fa-vest-patches"></i>
+                    </span>
+                         <span class="text-2xl font-bold text-gray-800 gap-8">Readymadeclothing</span>
+                   
+                    </div>
+                    <ul class=" space-x-4 gap-6 hidden lg:flex">
+                         <li><a href="./index.html" class="text-black-300 hover:text-gray-500">Home</a></li>
+                         <li><a href="./shop.html" class="text-black-300 hover:text-gray-500">Shop</a></li>
+                         <li><a href="./about.html" class="text-black-300 hover:text-gray-500">About</a></li>
+                         <li><a href="./collections.html" class="text-black-300 hover:text-gray-500">Collections</a></li>
+                         <li><a href="./contact.html" class="text-black-300 hover:text-gray-500">Contact</a></li>
+                    </ul>
+                    <div class="space-x-4 hidden lg:flex">
+                         <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Login</button>
+                    <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Sign Up</button>
+                    </div>
+                    <!-- Mobile -->
+                    <div class="lg:hidden">
+                         <button>
+                              <i class="fa-solid fa-bars"></i>
+                         </button>
+                    
+                    <ul class="absolute top-full left-0 bg-white w-full p-6 hidden">
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Home</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Shop</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">About</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Collections</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Contact</a></li>
+                    </ul>
+                    </div>
+               </div>
+               
+          </nav>
+     </header>
+
+     
+     <main class="bg-[#f8fafc]">
+          <section id="products" class="container mx-auto px-4 py-16">
+               <div class="mb-10 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">Featured Products</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600">Shop our handpicked collection of everyday essentials, statement styles, and standout pieces designed to elevate your wardrobe.</p>
+               </div>
+
+               <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <p class="text-sm text-gray-500">Showing 1-8 of 24 products</p>
+                    <div class="flex flex-wrap gap-2">
+                         <button class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">All</button>
+                         <button class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">Outerwear</button>
+                         <button class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">Tops</button>
+                         <button class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">Dresses</button>
+                    </div>
+               </div>
+
+               <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="bg-white shadow-md rounded-3xl overflow-hidden hover:-translate-y-1 transition">
+                         <img src="images/confident-woman-holding-trench-coat-with-smile.jpg" alt="Vintage Trench Coat" class="w-full h-72 object-cover">
+                         <div class="p-5">
+                              <span class="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Outerwear</span>
+                              <h3 class="text-xl font-semibold mb-2">Vintage Trench Coat</h3>
+                              <p class="text-gray-600 mb-4">A lightweight statement coat with a classic silhouette and tailored finish.</p>
+                              <div class="flex items-center justify-between">
+                                   <span class="text-lg font-bold text-gray-900">$49.99</span>
+                                   <a href="#" class="rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-700">Add to cart</a>
+                              </div>
+                         </div>
+                    </article>
+                    <article class="bg-white shadow-md rounded-3xl overflow-hidden hover:-translate-y-1 transition">
+                         <img src="images/pexels-arina-dmitrieva-66352626-14440412.jpg" alt="Casual Blouse" class="w-full h-72 object-cover">
+                         <div class="p-5">
+                              <span class="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Tops</span>
+                              <h3 class="text-xl font-semibold mb-2">Casual Blouse</h3>
+                              <p class="text-gray-600 mb-4">Soft, breathable fabric with a relaxed fit for easy styling day to night.</p>
+                              <div class="flex items-center justify-between">
+                                   <span class="text-lg font-bold text-gray-900">$29.99</span>
+                                   <a href="#" class="rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-700">Add to cart</a>
+                              </div>
+                         </div>
+                    </article>
+                    <article class="bg-white shadow-md rounded-3xl overflow-hidden hover:-translate-y-1 transition">
+                         <img src="images/pexels-ron-lach-8453642.jpg" alt="Elegant Dress" class="w-full h-72 object-cover">
+                         <div class="p-5">
+                              <span class="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Dresses</span>
+                              <h3 class="text-xl font-semibold mb-2">Elegant Dress</h3>
+                              <p class="text-gray-600 mb-4">A polished dress with subtle detailing for effortless evening style.</p>
+                              <div class="flex items-center justify-between">
+                                   <span class="text-lg font-bold text-gray-900">$59.99</span>
+                                   <a href="#" class="rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-700">Add to cart</a>
+                              </div>
+                         </div>
+                    </article>
+                    <article class="bg-white shadow-md rounded-3xl overflow-hidden hover:-translate-y-1 transition">
+                         <img src="images/pexels-arina-dmitrieva-66352626-14440420.jpg" alt="Stylish Jacket" class="w-full h-72 object-cover">
+                         <div class="p-5">
+                              <span class="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 mb-3">Outerwear</span>
+                              <h3 class="text-xl font-semibold mb-2">Stylish Jacket</h3>
+                              <p class="text-gray-600 mb-4">A modern jacket with a flattering cut and versatile layered look.</p>
+                              <div class="flex items-center justify-between">
+                                   <span class="text-lg font-bold text-gray-900">$39.99</span>
+                                   <a href="#" class="rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-gray-700">Add to cart</a>
+                              </div>
+                         </div>
+                    </article>
+               </div>
+          </section>
+
+          <section id="categories" class="container mx-auto px-4 py-16">
+               <div class="mb-10 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">Shop by Category</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600">Find the perfect look with curated categories that fit your style and mood.</p>
+               </div>
+               <div class="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                    <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                         <div class="h-64 overflow-hidden">
+                              <img src="images/pexels-ron-lach-9594692.jpg" alt="Outerwear category" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                         </div>
+                         <div class="flex flex-1 flex-col p-6">
+                              <h3 class="text-xl font-semibold mb-2">Outerwear</h3>
+                              <p class="text-gray-600 mb-6">Coats, jackets, and layering pieces for cooler days.</p>
+                              <a href="#" class="mt-auto text-sm font-semibold text-gray-900 transition hover:text-gray-700">Shop Outerwear →</a>
+                         </div>
+                    </article>
+                    <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                         <div class="h-64 overflow-hidden">
+                              <img src="images/2150952387.jpg" alt="Tops category" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                         </div>
+                         <div class="flex flex-1 flex-col p-6">
+                              <h3 class="text-xl font-semibold mb-2">Tops</h3>
+                              <p class="text-gray-600 mb-6">Everyday essentials in soft fabrics and modern silhouettes.</p>
+                              <a href="#" class="mt-auto text-sm font-semibold text-gray-900 transition hover:text-gray-700">Shop Tops →</a>
+                         </div>
+                    </article>
+                    <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                         <div class="h-64 overflow-hidden">
+                              <img src="images/pexels-arina-dmitrieva-66352626-14440420.jpg" alt="Dresses category" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                         </div>
+                         <div class="flex flex-1 flex-col p-6">
+                              <h3 class="text-xl font-semibold mb-2">Dresses</h3>
+                              <p class="text-gray-600 mb-6">Chic dresses for day-to-night styling and statement looks.</p>
+                              <a href="#" class="mt-auto text-sm font-semibold text-gray-900 transition hover:text-gray-700">Shop Dresses →</a>
+                         </div>
+                    </article>
+
+                    <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                         <div class="h-64 overflow-hidden">
+                              <img src="images/pexels-ja-kubislav-374578277-14534753.jpg" alt="Dresses category" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                         </div>
+                         <div class="flex flex-1 flex-col p-6">
+                              <h3 class="text-xl font-semibold mb-2">Boys</h3>
+                              <p class="text-gray-600 mb-6">Apparel for young gentlemen.</p>
+                              <a href="#" class="mt-auto text-sm font-semibold text-gray-900 transition hover:text-gray-700">Shop Boys →</a>
+                         </div>
+                    </article>
+               </div>
+          </section>
+     </main>
+
+     <footer class="bg-white border-t border-gray-200">
+          <div class="container mx-auto px-4 py-8 text-center text-sm text-gray-500">
+               <p>© 2026 Readymadeclothing. All rights reserved.</p>
+          </div>
+     </footer>
+
+</body>
+</html>

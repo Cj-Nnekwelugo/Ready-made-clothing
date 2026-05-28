@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Readymadeclothing</title>
+   <link rel="stylesheet" href="css/output.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>
-    
+     <header class="h-18 w-full  sticky bg-[#e8ecf0] shadow-xl top-0 z-50 ">
+          <nav class="h-full p-3 ">
+               <div class="container mx-auto flex items-center justify-between">
+                    <div class="  gap-8">
+                          <span class="text-3xl text-gray-800">
+                         <i class="fa-solid fa-vest-patches"></i>
+                    </span>
+                         <span class="text-2xl font-bold text-gray-800 gap-8">Readymadeclothing</span>
+                   
+                    </div>
+                    <ul class=" space-x-4 gap-6 hidden lg:flex">
+                         <li><a href="#home" class="text-black-300 hover:text-gray-500">Home</a></li>
+                         <li><a href="./shop.html" class="text-black-300 hover:text-gray-500">Shop</a></li>
+                         <li><a href="about.html" class="text-black-300 hover:text-gray-500">About</a></li>
+                         <li><a href="./collections.html" class="text-black-300 hover:text-gray-500">Collections</a></li>
+                         <li><a href="contac" class="text-black-300 hover:text-gray-500">Contact</a></li>
+                    </ul>
+                    <div class="space-x-4 hidden lg:flex">
+                         <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Login</button>
+                    <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Sign Up</button>
+                    </div>
+                    <!-- Mobile -->
+                    <div class="lg:hidden">
+                         <button>
+                              <i class="fa-solid fa-bars"></i>
+                         </button>
+                    
+                    <ul class="absolute top-full left-0 bg-white w-full p-6 hidden">
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Home</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Shop</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">About</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Collections</a></li>
+                         <li><a href="#" class="text-black-300 hover:text-gray-500">Contact</a></li>
+                    </ul>
+                    </div>
+               </div>
+               
+          </nav>
+     </header>
+
+
+
+
+
+     <section id="home" class=" w-full lg:h-[calc(100vh-4.5rem)] md:full bg-[url('../images/hero.jpg')] min-h-screen bg-right object-contain py-16 bg-no-repeat bg-cover ">
+          <div class="container 2xl:gap-1 gap-6 mx-auto text-center h-full relative flex flex-col items-center justify-center text-white 2">
+               <h1 class="text-5xl font-bold 2xl:text-7xl w-9/10 max-w-110 capitalize lg:text-7xl text-center m-7">Welcome to Ready made clothing</h1>
+               <p class="text-lg text-gray-700 mb-30">Your one-stop shop for stylish and affordable clothing.</p>
+               <p class=" text-gray-700 mb-30 text-xl max-w-1400 w-9/10">
+                    There is a particular feeling that arrives when a garment is truly right — when the cut, the fabric, the weight of it all conspire to say something without words. That feeling is what we build everything around.
+               </p>
+              <div class="flex lg:content-center  gap-8 lg:justify-center">
+                <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700">Shop Now</a>
+               <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700">Discover More</a>
+              </div>
+          
+          </div>
+     </section>
+     <footer>
+          <div>
+               <div class="container mx-auto py-16 bg-[#e8ecf0]">
+                    <h2 class="text-3xl font-bold text-center mb-8">Stay Connected</h2>
+                    <p class="text-lg text-gray-700 text-center mb-10">
+                         Follow us on social media and subscribe to our newsletter for the latest updates, exclusive offers, and fashion inspiration.
+                    </p>
+                    <div class="flex justify-center gap-6">
+                         <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-facebook fa-2x"></i></a>
+                         <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-instagram fa-2x"></i></a>
+                         <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-twitter fa-2x"></i></a>
+                         <a href="#" class="text-gray-500 hover:text-gray-700"><i class="fab fa-pinterest fa-2x"></i></a>
+                    </div>
+               </div>
+          </div>
+          <div>
+               <p class="text-center  text-gray-500 py-4 bg-[#e8ecf0]">&copy; 2024 Readymadeclothing. All rights reserved.Designed by Cj Nnekwelugo</p>
+          </div>
+     </footer>
 </body>
 </html>
