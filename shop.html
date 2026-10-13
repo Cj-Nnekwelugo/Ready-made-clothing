@@ -3,50 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Explore clothing, everyday essentials, and curated categories from Readymadeclothing.">
+    <title>Shop | Readymadeclothing</title>
     <link rel="stylesheet" href="css/output.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="h-18 w-full  sticky bg-[#e8ecf0] shadow-xl top-0 z-50 ">
-          <nav class="h-full p-3 ">
-               <div class="container mx-auto flex items-center justify-between">
-                    <div class="  gap-8">
-                          <span class="text-3xl text-gray-800">
-                         <i class="fa-solid fa-vest-patches"></i>
-                    </span>
-                         <span class="text-2xl font-bold text-gray-800 gap-8">Readymadeclothing</span>
-                   
-                    </div>
-                    <ul class=" space-x-4 gap-6 hidden lg:flex">
-                         <li><a href="./index.html" class="text-black-300 hover:text-gray-500">Home</a></li>
-                         <li><a href="./shop.html" class="text-black-300 hover:text-gray-500">Shop</a></li>
-                         <li><a href="./about.html" class="text-black-300 hover:text-gray-500">About</a></li>
-                         <li><a href="./collections.html" class="text-black-300 hover:text-gray-500">Collections</a></li>
-                         <li><a href="./contact.html" class="text-black-300 hover:text-gray-500">Contact</a></li>
-                    </ul>
-                    <div class="space-x-4 hidden lg:flex">
-                         <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Login</button>
-                    <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Sign Up</button>
-                    </div>
-                    <!-- Mobile -->
-                    <div class="lg:hidden">
-                         <button>
-                              <i class="fa-solid fa-bars"></i>
-                         </button>
-                    
-                    <ul class="absolute top-full left-0 bg-white w-full p-6 hidden">
-                         <li><a href="#" class="text-black-300 hover:text-gray-500">Home</a></li>
-                         <li><a href="#" class="text-black-300 hover:text-gray-500">Shop</a></li>
-                         <li><a href="#" class="text-black-300 hover:text-gray-500">About</a></li>
-                         <li><a href="#" class="text-black-300 hover:text-gray-500">Collections</a></li>
-                         <li><a href="#" class="text-black-300 hover:text-gray-500">Contact</a></li>
-                    </ul>
-                    </div>
-               </div>
-               
-          </nav>
-     </header>
+<body class="page">
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="brand" href="./index.html" aria-label="Readymadeclothing home">
+                <span class="brand-icon"><i class="fa-solid fa-vest-patches" aria-hidden="true"></i></span>
+                <span>Readymadeclothing</span>
+            </a>
+            <ul class="desktop-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop.html" aria-current="page">Shop</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./collections.html">Collections</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <a class="nav-cta" href="./shop.html">Explore the shop <span aria-hidden="true">→</span></a>
+            <details class="mobile-nav">
+                <summary aria-label="Open navigation menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></summary>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./shop.html" aria-current="page">Shop</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./collections.html">Collections</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </details>
+        </nav>
+    </header>
 
      
      <main class="bg-[#f8fafc]">
@@ -157,7 +145,7 @@
 
                     <article class="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-xl">
                          <div class="h-64 overflow-hidden">
-                              <img src="images/pexels-ja-kubislav-374578277-14534753.jpg" alt="Dresses category" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                              <img src="images/pexels-ja-kubislav-374578277-14534753.jpg" alt="Boys clothing category" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
                          </div>
                          <div class="flex flex-1 flex-col p-6">
                               <h3 class="text-xl font-semibold mb-2">Boys</h3>
@@ -169,7 +157,7 @@
           </section>
      </main>
 
-     <footer class="bg-white border-t border-gray-200">
+     <footer class="site-footer">
           <div class="container mx-auto px-4 py-8 text-center text-sm text-gray-500">
                <p>© 2026 Readymadeclothing. All rights reserved.</p>
           </div>
