@@ -11,6 +11,22 @@ if (form) {
             throw new Error("The contact form is missing its submit button or status message.");
         }
 
+        const fields = [...form.querySelectorAll("input, textarea")];
+        const emptyField = fields.find((field) => !field.value.trim());
+
+        if (emptyField) {
+            status.textContent = "Please fill in all fields before sending.";
+            emptyField.focus();
+            return;
+        }
+
+        const email = form.querySelector('input[type="email"]');
+        if (email && !email.validity.valid) {
+            status.textContent = "Please enter a valid email address.";
+            email.focus();
+            return;
+        }
+
         const formData = new FormData(form);
         formData.append("access_key", "d10de4fa-7750-445e-bfb6-7fb7b934154f");
 
