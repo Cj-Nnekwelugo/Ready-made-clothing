@@ -85,11 +85,11 @@
                         <div class="grid gap-6 md:grid-cols-2">
                             <label class="block">
                                 <span class="text-sm font-semibold text-gray-700">Name</span>
-                                <input type="text" id="name" name="Name" placeholder="Your name" class="mt-2 w-full rounded-3xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-700 outline-none transition focus:border-gray-400 focus:bg-white" />
+                                <input type="text" id="name" name="Name" placeholder="Your name" required class="mt-2 w-full rounded-3xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-700 outline-none transition focus:border-gray-400 focus:bg-white" />
                             </label>
                             <label class="block">
                                 <span class="text-sm  font-semibold text-gray-700">Email</span>
-                                <input type="email" id="email" name="email" placeholder="you@example.com" class="mt-2 w-full rounded-3xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-700 outline-none transition focus:border-gray-400 focus:bg-white" />
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required class="mt-2 w-full rounded-3xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-700 outline-none transition focus:border-gray-400 focus:bg-white" />
                             </label>
                         </div>
                         <label class="block">
@@ -97,10 +97,11 @@
                             <input type="text" name="Subject" id="subject" placeholder="How can we help?" class="mt-2 w-full rounded-3xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-700 outline-none transition focus:border-gray-400 focus:bg-white" />
                         </label>
                         <label class="block">
-                            <span class="text-sm font-semibold text-gray-700" id="message">Message</span>
-                            <textarea rows="6" placeholder="Tell us more..."  name="message" class="mt-2 w-full rounded border border-gray-200 bg-gray-50 px-4 py-3 text-gray-700 outline-none transition focus:border-gray-400 focus:bg-white"></textarea>
+                            <span class="text-sm font-semibold text-gray-700">Message</span>
+                            <textarea id="message" rows="6" placeholder="Tell us more..." name="message" required class="mt-2 w-full rounded border border-gray-200 bg-gray-50 px-4 py-3 text-gray-700 outline-none transition focus:border-gray-400 focus:bg-white"></textarea>
                         </label>
-                        <button type="submit" id="submit" class="inline-flex w-full items-center justify-center rounded-full bg-gray-900 px-8 py-3 text-sm font-semibold text-white transition hover:bg-gray-700 md:w-auto">Send message</button>
+                        <button type="submit"  class="inline-flex w-full items-center justify-center rounded-full bg-gray-900 px-8 py-3 text-sm font-semibold text-white transition hover:bg-gray-700 md:w-auto">Send message</button>
+                        <p id="form-status" class="mt-4 text-sm text-gray-700" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
