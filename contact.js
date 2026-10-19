@@ -1,40 +1,44 @@
-const form = document.getElementById('form');
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const subject = document.getElementById("subject");
-const message = document.getElementById("message");
-const submitBtn = form.querySelector('button[type="submit"]');
+const form = document.getElementById("form");
 
-form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+if (form) {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const status = document.getElementById("form-status");
 
-    const formData = new FormData(form);
-    formData.append("access_key", "d10de4fa-7750-445e-bfb6-7fb7b934154f");
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-    const originalText = submitBtn.textContent;
-
-    submitBtn.textContent = "Sending...";
-    submitBtn.disabled = true;
-
-    try {
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
-
-        const data = await response.json();
-
-        if (response.ok) {
-            alert("Success! Your message has been sent.");
-            form.reset();
-        } else {
-            alert("Error: " + data.message);
+        if (!submitBtn || !status) {
+            throw new Error("The contact form is missing its submit button or status message.");
         }
 
-    } catch (error) {
-        alert("Something went wrong. Please try again.");
-    } finally {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    }
-});
+        const formData = new FormData(form);
+        formData.append("access_key", "d10de4fa-7750-445e-bfb6-7fb7b934154f");
+
+        const originalText = submitBtn.textContent;
+        status.textContent = "";
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            const data = await response.json();
+
+            if (!response.ok || !data.success) {
+                throw new Error(data.message || "Your message could not be sent. Please try again.");
+            }
+
+            status.textContent = "Your message has been sent. Thank you!";
+            form.reset();
+        } catch (error) {
+            status.textContent = error instanceof Error
+                ? error.message
+                : "Something went wrong. Please try again.";
+        } finally {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+}
